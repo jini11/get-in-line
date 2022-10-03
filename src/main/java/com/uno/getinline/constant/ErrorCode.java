@@ -35,13 +35,13 @@ public enum ErrorCode { // 에러 정의
                 .orElse(getMessage());
     }
 
-//    public boolean isClientSideError() {
-//        return this.getErrorCategory() == ErrorCategory.CLIENT_SIDE;
-//    }
-//
-//    public boolean isServerSideError() {
-//        return this.getErrorCategory() == ErrorCategory.SERVER_SIDE;
-//    }
+    public boolean isClientSideError() {
+        return this.getErrorCategory() == ErrorCategory.CLIENT_SIDE;
+    }
+
+    public boolean isServerSideError() {
+        return this.getErrorCategory() == ErrorCategory.SERVER_SIDE;
+    }
 
     @Override
     public String toString() {
